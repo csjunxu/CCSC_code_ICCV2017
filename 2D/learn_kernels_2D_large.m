@@ -8,7 +8,8 @@ addpath('../image_helpers');
 CONTRAST_NORMALIZE = 'local_cn'; 
 ZERO_MEAN = 1;   
 COLOR_IMAGES = 'gray';                         
-[b] = CreateImages('./Large_Datset/',CONTRAST_NORMALIZE,ZERO_MEAN,COLOR_IMAGES); % Replace directory with large image data directory.
+[b] = CreateImages('./Large_Datset/',CONTRAST_NORMALIZE,ZERO_MEAN,COLOR_IMAGES); 
+% Replace directory with large image data directory.
 b = reshape(b, size(b,1), size(b,2), [] ); 
 
 %% Define the parameters
